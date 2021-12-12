@@ -1,0 +1,107 @@
+/* Fonts Kit*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("/fonts/Segoe UI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Italic"), url("/fonts/ UI Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold"), url("/fonts/Segoe UI Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold Italic"),
+    url("/fonts/Segoe UI Bold Italic.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+}
+.top-nav {
+  background-color: #f5f3f3;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  height: auto;
+}
+
+.top-nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.top-nav ul {
+  padding: 10px;
+  margin: 0;
+  padding-right: 0px;
+}
+
+.follow-nav {
+  color: #fff;
+  align-items: right;
+  background-image: url(/img/top-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 40px;
+}
+.follow-nav img {
+  padding-left: 10px;
+}
+
+.nav-rap {
+  padding: 10px;
+}
+
+header .navbar-nav a {
+  color: #565559;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header .navbar-nav a:hover,
+.active {
+  color: #009cd3 !important;
+  border-top: #009cd3 2px solid;
+}
+
+header .navbar-brand img {
+  width: 70%;
+  height: auto;
+}
+
+/* Hero section start */
+.hero-wrap {
+  background: #cee8f6;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+}
+
+.hero-bg img {
+  height: 80vh;
+}

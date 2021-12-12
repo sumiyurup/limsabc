@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    {{ partial "top-bar.html" . }}
+    <!-- End Top Bar-->
+
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      {{ partial "about.html" . }}
+      <!-- End About Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <!-- Main service-->
+            {{ partial "main-services.html" . }}
+            <!--send of main service-->
+
+            <!-- Start of small box line 1-->
+            {{range .Site.Data.services}}
+            <div class="col-lg-2" data-aos="fade-up" data-aos-delay="100">
+              <div class="small-boxs">
+                <img
+                  src="/assets/img/icons/{{.img}}.svg"
+                  alt=""
+                  class="small-box-icon"
+                />
+                <h4 class="title-2"><a href="">{{.title}}</a></h4>
+                <a href="{{.url}}" class="end-align">Learn more</a>
+              </div>
+            </div>
+            {{end}}
+            <!-- end of small box line 1-->
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= section-1 Section ======= -->
+      {{ partial "section-1.html" . }}
+      <!-- section-1 Section -->
+
+      <!-- ======= section-2 Section ======= -->
+      {{ partial "section-2.html" . }}
+      <!-- section-2 Section -->
+
+      <!-- ======= section-3 Section ======= -->
+      {{ partial "section-3.html" . }}
+      <!-- section-3 Section -->
+
+      <!-- ======= section-4 Section ======= -->
+      {{ partial "section-4.html" . }}
+      <!-- section-4 Section -->
+
+      <!-- ======= section-5 Section ======= -->
+      {{ partial "section-5.html" . }}
+      <!-- section-5 Section -->
+
+      <!-- ======= section-6 Section ======= -->
+      {{ partial "section-6.html" . }}
+      <!-- section-6 Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" . }}
+    <!-- End Footer -->
+
+    <!-- ======= Header ======= -->
+    {{ partial "script.html" . }}
+    <!-- End Header -->
+  </body>
+</html>

@@ -1,0 +1,58 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'LIMSABC | When you need results'
+
+[Params]
+  phone = '1-800-834-8618'
+  linkedin='/'
+  twitter='/'
+
+[menu]
+
+[[menu.main]]
+  identifier = 'SOLUTIONS'
+  name = 'SOLUTIONS'
+  title = 'SOLUTIONS'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'PATIENT PORTAL'
+  name = 'PATIENT PORTAL'
+  title = 'PATIENT PORTAL'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'PRICING'
+  name = 'PRICING'
+  title = 'PRICING'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'PLATFORM'
+  name = 'PLATFORM'
+  title = 'PLATFORM'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'NEWSROOM'
+  name = 'NEWSROOMs'
+  title = 'NEWSROOM'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'BLOG'
+  name = 'BLOG'
+  title = 'BLOG'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'CONTACT'
+  name = 'CONTACT'
+  title = 'CONTACT'
+  url = '/'
+
+[[menu.main]]
+  identifier = 'DEMO'
+  name = 'DEMO'
+  title = 'DEMO'
+  url = '/'
