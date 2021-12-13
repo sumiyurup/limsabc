@@ -1,62 +1,74 @@
 {
   "COVID": {
     "title": "COVID",
-    "img": "icon-3",
-    "url": "/"
+    "img": "icon-4",
+    "url": "/",
+    "id": "1"
   },
   "Molecular ID": {
     "title": "Molecular ID",
-    "img": "icon-4",
-    "url": "/"
+    "img": "icon-5",
+    "url": "/",
+    "id": "2"
   },
   "Chemistry": {
     "title": "Chemistry",
-    "img": "icon-5",
-    "url": "/"
+    "img": "icon-6",
+    "url": "/",
+    "id": "3"
   },
   "Hematology": {
     "title": "Hematology",
-    "img": "icon-6",
-    "url": "/"
+    "img": "icon-7",
+    "url": "/",
+    "id": "4"
   },
   "FISH": {
     "title": "FISH",
-    "img": "icon-7",
-    "url": "/"
+    "img": "icon-8",
+    "url": "/",
+    "id": "5"
   },
   "Cytology": {
     "title": "Cytology",
-    "img": "icon-8",
-    "url": "/"
+    "img": "icon-9",
+    "url": "/",
+    "id": "6"
   },
   "Toxicology": {
     "title": "Toxicology",
-    "img": "icon-9",
-    "url": "/"
+    "img": "icon-10",
+    "url": "/",
+    "id": "7"
   },
   "Micro": {
     "title": "Micro",
-    "img": "icon-10",
-    "url": "/"
+    "img": "icon-11",
+    "url": "/",
+    "id": "8"
   },
   "Serology": {
     "title": "Serology",
-    "img": "icon-11",
-    "url": "/"
+    "img": "icon-12",
+    "url": "/",
+    "id": "9"
   },
   "Imunology": {
     "title": "Imunology",
-    "img": "icon-12",
-    "url": "/"
+    "img": "icon-13",
+    "url": "/",
+    "id": "10"
   },
   "NGS": {
     "title": "NGS",
-    "img": "icon-13",
-    "url": "/"
+    "img": "icon-14",
+    "url": "/",
+    "id": "11"
   },
   "MORE": {
     "title": "MORE",
-    "img": "icon-14",
-    "url": "/"
+    "img": "icon-15",
+    "url": "/",
+    "id": "12"
   }
 }

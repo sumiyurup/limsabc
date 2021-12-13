@@ -25,7 +25,7 @@
             <!--send of main service-->
 
             <!-- Start of small box line 1-->
-            {{range .Site.Data.services}}
+            {{range sort .Site.Data.services "id" "asc"}}
             <div class="col-lg-2" data-aos="fade-up" data-aos-delay="100">
               <div class="small-boxs">
                 <img
@@ -33,7 +33,7 @@
                   alt=""
                   class="small-box-icon"
                 />
-                <h4 class="title-2"><a href="">{{.title}}</a></h4>
+                <h4 class="title-2">{{.title}}</h4>
                 <a href="{{.url}}" class="end-align">Learn more</a>
               </div>
             </div>
