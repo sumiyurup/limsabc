@@ -1,0 +1,22 @@
+<section id="section-7">
+  <div class="container" data-aos="zoom-out">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="/assets/img/section-7.png" alt="" class="section-image" />
+      </div>
+      <div
+        class="col-lg-7 text-center text-lg-start align-center section-7-icon"
+      >
+        {{ range.Params.mainSection }}
+        <h2 class="section-2-title">
+          {{.sectionTitle}} <span>{{.sectionspan}}</span>
+        </h2>
+        <p class="section-2-text">
+          <span>{{.sectionDescription}} </span>
+        </p>
+        <img src="{{.sectionImage}}" alt="" />
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>

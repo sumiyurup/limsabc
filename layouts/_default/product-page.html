@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    {{ partial "top-bar.html" . }}
+    <!-- End Top Bar-->
+
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      {{ partial "product-page/about.html" . }}
+      <!-- End About Section -->
+
+      <!-- ======= section-2 Section ======= -->
+      {{ partial "product-page/section-2.html" . }}
+      <!-- section-2 Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="product-box">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <!-- Main service-->
+            {{ partial "product-page/services.html" . }}
+            <!--send of main service-->
+          </div>
+        </div>
+        <div class="btn-product" s>
+          <a href="">REQUEST A DEMO</a>
+        </div>
+      </section>
+
+      <!-- End Services Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" . }}
+    <!-- End Footer -->
+
+    <!-- ======= Header ======= -->
+    {{ partial "script.html" . }}
+    <!-- End Header -->
+  </body>
+</html>
