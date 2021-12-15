@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    <!-- ======= Top Bar ======= -->
+    {{ partial "top-bar.html" . }}
+    <!-- End Top Bar-->
+
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Breadcrumbs Section ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>{{.Title}}</h2>
+            <ol>
+              <li><a href="/">Home</a></li>
+              {{ range (split .URL "/") }} {{ if gt (len . ) 0 }}
+              <li>
+                <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+              </li>
+              {{ end }} {{ end }}
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrumbs Section -->
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <ul class="list-page">
+                {{ range .Pages }}
+                <li>
+                  <p class="date">
+                    {{ time.Format "2 Jan 2006" "2015-01-21" }}
+                    <a href="" class="category">
+                      {{ range .Params.categories }}{{ . }} {{ end }}</a
+                    >
+                  </p>
+                  <h2>{{.Title}}</h2>
+                  <br />
+                  <p>{{.Description}}</p>
+                  <a href="{{.Permalink}}" class="read-more">Read More...</a>
+                </li>
+                {{end}}
+              </ul>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Search this blog</h3>
+                <ul>
+                  <li>{{ partial "search-form.html" . }}</li>
+                </ul>
+              </div>
+              <div class="portfolio-info categories">
+                <h3>Categories</h3>
+                <ul>
+                  {{ $posts := where .Site.Pages "Type" "post" }} {{ range
+                  $name, $taxonomy := .Site.Taxonomies.categories }} {{
+                  $.Scratch.Set "tagCounter" 0 }} {{ range $posts}} {{ if in
+                  .Params.categories $name }} {{ $.Scratch.Add "tagCounter" 1 }}
+                  {{ end }} {{ end }}
+                  <li>
+                    >
+                    <a href="/categories/{{ . | urlize}}"
+                      ><strong
+                        >{{ $name }} ({{ $.Scratch.Get "tagCounter" }}) </strong
+                      >:
+                    </a>
+                  </li>
+                  {{end}}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" . }}
+    <!-- End Footer -->
+
+    <!-- ======= Header ======= -->
+    {{ partial "script.html" . }}
+    <!-- End Header -->
+  </body>
+</html>

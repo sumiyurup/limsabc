@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    <!-- ======= Top Bar ======= -->
+    {{ partial "top-bar.html" . }}
+    <!-- End Top Bar-->
+
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <main id="main search-section">
+      <section id="search-section">
+        <div class="container">
+          {{ partial "search-form.html" . }}
+          <ul id="results">
+            <li>Enter a keyword above to search this Blog.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" . }}
+    <!-- End Footer -->
+
+    <!-- ======= Header ======= -->
+    {{ partial "script.html" . }}
+    <!-- End Header -->
+  </body>
+</html>

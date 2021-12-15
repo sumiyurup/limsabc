@@ -43,7 +43,7 @@ title = 'LIMSABC | When you need results'
   identifier = 'BLOG'
   name = 'BLOG'
   title = 'BLOG'
-  url = '/'
+  url = '/blog'
 
 [[menu.main]]
   identifier = 'CONTACT'
