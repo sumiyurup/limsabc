@@ -62,20 +62,40 @@
               <div class="portfolio-info categories">
                 <h3>Categories</h3>
                 <ul>
-                  {{ $posts := where .Site.Pages "Type" "post" }} {{ range
-                  $name, $taxonomy := .Site.Taxonomies.categories }} {{
-                  $.Scratch.Set "tagCounter" 0 }} {{ range $posts}} {{ if in
-                  .Params.categories $name }} {{ $.Scratch.Add "tagCounter" 1 }}
-                  {{ end }} {{ end }}
-                  <li>
-                    >
-                    <a href="/categories/{{ . | urlize}}"
+                  
+                  
+                  <li> >
+                    <a href="/blog/lims/"
                       ><strong
-                        >{{ $name }} ({{ $.Scratch.Get "tagCounter" }}) </strong
+                        > LIMS (69) </strong
                       >:
                     </a>
                   </li>
-                  {{end}}
+                  <li>
+                    >
+                    <a href="/blog/toxicology/"
+                      ><strong
+                        > TOXICOLOGY (30) </strong
+                      >:
+                    </a>
+                  </li>
+                  <li> >
+                      <a href="/blog/biorepository/"
+                        ><strong
+                          > BIOREPOSITORY (8) </strong
+                        >:
+                      </a>
+                  </li>
+                  <li> >
+                      <a href="/blog/clinical-trials/">
+                        <strong> CLINICAL TRIALS(8) </strong>
+                      </a>
+                  </li>
+                  <li> >
+                      <a href="/blog/molecular/">
+                        <strong> MOLECULAR (5) </strong>
+                      </a>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -976,6 +976,39 @@ product-box
   background-color: #54b4f493;
   color: #fff;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #565559;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.nav-list ul{
+  list-style: none;
+  color: #0792c9;
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #c4c4c42d;
+  font-size: 12px;
+}
+.nav-list ul li{
+  padding: 10px 20px;
+}
+.nav-list ul li :hover{
+  color: #00b7ff;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

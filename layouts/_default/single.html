@@ -45,20 +45,14 @@
               <div class="portfolio-info categories">
                 <h3>Categories</h3>
                 <ul>
-                  {{ $posts := where .Site.Pages "Type" "post" }} {{ range
-                  $name, $taxonomy := .Site.Taxonomies.categories }} {{
-                  $.Scratch.Set "tagCounter" 0 }} {{ range $posts}} {{ if in
-                  .Params.categories $name }} {{ $.Scratch.Add "tagCounter" 1 }}
-                  {{ end }} {{ end }}
                   <li>
                     >
-                    <a href="/categories/{{ . | urlize}}"
+                    <a href="/blog/toxicology/"
                       ><strong
-                        >{{ $name }} ({{ $.Scratch.Get "tagCounter" }}) </strong
+                        >  </strong
                       >:
                     </a>
                   </li>
-                  {{end}}
                 </ul>
               </div>
             </div>

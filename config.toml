@@ -9,50 +9,87 @@ title = 'LIMSABC | When you need results'
 
 [menu]
 
-[[menu.main]]
+[[menu.nav]]
+  identifier = 'home'
+  name = 'HOME'
+  title = 'HOME'
+  pageref = '/'
+  weight = 1
+
+
+[[menu.nav]]
   identifier = 'SOLUTIONS'
   name = 'SOLUTIONS'
   title = 'SOLUTIONS'
-  url = '/'
+  pageref = '/s'
+  weight = 2
 
-[[menu.main]]
+[[menu.nav]]
   identifier = 'PATIENT PORTAL'
   name = 'PATIENT PORTAL'
   title = 'PATIENT PORTAL'
-  url = '/'
+  pageref = '/s'
+  weight = 3
 
-[[menu.main]]
+[[menu.nav]]
   identifier = 'PRICING'
   name = 'PRICING'
   title = 'PRICING'
-  url = '/'
+  pageref = '/s'
+  weight = 4
 
-[[menu.main]]
+[[menu.nav]]
   identifier = 'PLATFORM'
   name = 'PLATFORM'
   title = 'PLATFORM'
-  url = '/'
+  pageref = '/s'
+  weight = 5
 
-[[menu.main]]
+[[menu.nav]]
   identifier = 'NEWSROOM'
   name = 'NEWSROOMs'
   title = 'NEWSROOM'
-  url = '/'
+  pageref = '/s'
+  weight = 6
 
-[[menu.main]]
-  identifier = 'BLOG'
+[[menu.nav]]
+  identifier = 'blog'
   name = 'BLOG'
   title = 'BLOG'
-  url = '/blog'
+  pageref = '/blog/'
+  weight = 7
 
-[[menu.main]]
+[[menu.nav]]
   identifier = 'CONTACT'
   name = 'CONTACT'
   title = 'CONTACT'
-  url = '/'
+  pageref = '/s'
+  weight = 8
 
-[[menu.main]]
+[[menu.nav]]
   identifier = 'DEMO'
   name = 'DEMO'
   title = 'DEMO'
-  url = '/'
+  pageref = '/s'
+  weight = 9
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
