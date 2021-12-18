@@ -14,6 +14,7 @@ title = 'LIMSABC | When you need results'
   name = 'HOME'
   title = 'HOME'
   pageref = '/'
+  url = '/'
   weight = 1
 
 
@@ -22,6 +23,7 @@ title = 'LIMSABC | When you need results'
   name = 'SOLUTIONS'
   title = 'SOLUTIONS'
   pageref = '/s'
+  url = '/s'
   weight = 2
 
 [[menu.nav]]
@@ -29,6 +31,7 @@ title = 'LIMSABC | When you need results'
   name = 'PATIENT PORTAL'
   title = 'PATIENT PORTAL'
   pageref = '/s'
+  url = '/s'
   weight = 3
 
 [[menu.nav]]
@@ -36,6 +39,7 @@ title = 'LIMSABC | When you need results'
   name = 'PRICING'
   title = 'PRICING'
   pageref = '/s'
+  url = '/s'
   weight = 4
 
 [[menu.nav]]
@@ -43,6 +47,7 @@ title = 'LIMSABC | When you need results'
   name = 'PLATFORM'
   title = 'PLATFORM'
   pageref = '/s'
+  url = '/b'
   weight = 5
 
 [[menu.nav]]
@@ -50,6 +55,7 @@ title = 'LIMSABC | When you need results'
   name = 'NEWSROOMs'
   title = 'NEWSROOM'
   pageref = '/s'
+  url = '/bl'
   weight = 6
 
 [[menu.nav]]
@@ -57,6 +63,7 @@ title = 'LIMSABC | When you need results'
   name = 'BLOG'
   title = 'BLOG'
   pageref = '/blog/'
+  url = '/blog/'
   weight = 7
 
 [[menu.nav]]
@@ -64,6 +71,7 @@ title = 'LIMSABC | When you need results'
   name = 'CONTACT'
   title = 'CONTACT'
   pageref = '/s'
+  url = '/b/'
   weight = 8
 
 [[menu.nav]]
@@ -71,6 +79,7 @@ title = 'LIMSABC | When you need results'
   name = 'DEMO'
   title = 'DEMO'
   pageref = '/s'
+  url = '/b'
   weight = 9
 
 [markup]
